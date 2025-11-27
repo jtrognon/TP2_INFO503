@@ -1,4 +1,5 @@
 #include "TriDenombrement.h"
+#include "Utils.h"
 #define DEBUG
 
 int main()
@@ -7,6 +8,7 @@ int main()
 
     #ifdef DEBUG
     test_denombrement();
+    test_utils();
     #endif
 
     return 0;
