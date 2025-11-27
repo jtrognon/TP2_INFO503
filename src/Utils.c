@@ -2,7 +2,12 @@
 
 void afficher_tableau(int t[], int n)
 {
-    if (n > 0)
+    /**
+     * \brief Affiche le tableau donné.
+     * \param t Le tableau à afficher.
+     * \param n La taille du tableau à afficher.
+     */
+    if (n > 0 && t != NULL)
     {
         printf("[ ");
         
@@ -22,6 +27,10 @@ void afficher_tableau(int t[], int n)
 
 void test_utils()
 {
+    /**
+     * \brief La fonction de test de la librairie Utils.
+     */
+    
     int * tVide = NULL;
     int tNonVide[3] = {1, 2, 3};
 
