@@ -2,8 +2,10 @@
 #define TRI_DENOMBREMENT_H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "Utils.h"
 
-void tri_denombrement(int t[], int s[], int k, int n);
+int tri_denombrement(int t[], int s[], int k, int n);
 
 void test_denombrement();
 

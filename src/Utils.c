@@ -30,7 +30,8 @@ void test_utils()
     /**
      * \brief La fonction de test de la librairie Utils.
      */
-    
+    printf("========================== Utils ==========================\n");
+
     int * tVide = NULL;
     int tNonVide[3] = {1, 2, 3};
 
