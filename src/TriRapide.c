@@ -1,5 +1,5 @@
 #include "TriRapide.h"
-
+#define DEBUG
 
 
 void permuter(int *i, int *j) {
@@ -113,7 +113,11 @@ void tri_rapide(int tab[],int i,int j){
     if(i < j){
         int k;
         partition(tab,i,j,&k);
+        
+        #ifdef DEBUG
         printf("Pivot : %d\n",k);
+        #endif
+        
         tri_rapide(tab,i,k-1);
         tri_rapide(tab,k+1,j);
     }
