@@ -1,5 +1,5 @@
 #include "TriDenombrement.h"
-#define DEBUG
+// #define DEBUG
 
 int tri_denombrement(int t[], int s[], int k, int n)
 {

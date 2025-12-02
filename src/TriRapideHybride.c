@@ -1,5 +1,5 @@
 #include "TriRapideHybride.h"
-#define DEBUG
+// #define DEBUG
 
 void permuter_h(int *i, int *j) {
     /**

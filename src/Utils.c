@@ -25,6 +25,12 @@ void afficher_tableau(int t[], int n)
     }
 }
 
+int entier_aleatoire(int min, int max)
+{
+    return rand() % (max - min + 1) + min;
+}
+
+
 void test_utils()
 {
     /**
@@ -38,4 +44,12 @@ void test_utils()
     afficher_tableau(tVide, 0);
 
     afficher_tableau(tNonVide, 3);
+}
+
+void genererTableau(int min, int max, int taille, int t[])
+{
+    for (int i = 0; i < taille; i++)
+    {
+        t[i] = entier_aleatoire(min, max);
+    }    
 }

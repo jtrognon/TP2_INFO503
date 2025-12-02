@@ -1,5 +1,5 @@
 #include "TriRapide.h"
-#define DEBUG
+// #define DEBUG
 
 
 void permuter(int *i, int *j) {
