@@ -73,12 +73,12 @@ void partition_h(int t[],int i,int j,int *k){
     int pivot = j;
 
     while(l <= pivot){
-        while (t[pivot] > t[i] && l <= pivot)
+        while (l <= pivot && t[pivot] > t[i])
         {
             pivot--;
         }
 
-        while (t[l]<= t[i] && l <= pivot)
+        while (l <= pivot && t[l]<= t[i])
         {
             l++;
         }

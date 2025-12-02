@@ -74,12 +74,12 @@ void partition(int t[],int i,int j,int *k){
     int pivot = j;
 
     while(l <= pivot){
-        while (t[pivot] > t[i] && l <= pivot)
+        while (l <= pivot && t[pivot] > t[i])
         {
             pivot--;
         }
 
-        while (t[l]<= t[i] && l <= pivot)
+        while (l <= pivot && t[l]<= t[i] )
         {
             l++;
         }
@@ -134,6 +134,7 @@ void test_rapide(){
 
     //Tableau avec 5 éléments
     int tab[5] = {2,1,3,6,5};
+    printf("Tableau de 5 éléments:\n\n");
     printf("entrée :");
     afficher_tableau(tab,5);
     tri_rapide(tab,0,4);
@@ -144,6 +145,7 @@ void test_rapide(){
 
     //Tableau avec 1 élément
     int tab2[1] = {1};
+    printf("Tableau d'un élément:\n\n");
     printf("entrée :");
     afficher_tableau(tab2,1);
     tri_rapide(tab2,0,0);
@@ -154,6 +156,7 @@ void test_rapide(){
 
     //Tableau avec 10 éléments
     int tab3[10] = {2,1,4,3,8,6,5,7,10,9};
+    printf("Tableau de 10 éléments avec un tri des éléments 0 à 4 :\n\n");
     printf("entrée :");
     afficher_tableau(tab3,10);
     tri_rapide(tab3,0,5); //Tri seulement les éléments 0 à 5
